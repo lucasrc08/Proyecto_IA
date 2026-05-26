@@ -7,7 +7,7 @@
 
 ## Código final
 
-🔗 [Ver policy.py en GitHub]((https://github.com/lucasrc08/Proyecto_IA/blob/felipeCepeda/policy.py))
+🔗 [Ver policy.py en GitHub]("https://github.com/lucasrc08/Proyecto_IA/blob/felipeCepeda/policy.py")
 
 ---
 
