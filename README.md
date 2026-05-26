@@ -1,6 +1,13 @@
 # Agente Connect-4 — Híbrido ADP + MCTS
 
-**Fundamentos de Inteligencia Artificial · Universidad de La Sabana · 2026.1**
+**Fundamentos de Inteligencia Artificial · Universidad de La Sabana · 2026.1**  
+**Estudiante:** Juan Felipe Cepeda U
+
+---
+
+## Código final
+
+🔗 [Ver policy.py en GitHub](https://github.com/lucasrc08/Proyecto_IA/blob/JuanFelipeCepeda/tournament/groups/JuanFelipeCepeda/policy.py)
 
 ---
 
@@ -32,10 +39,10 @@ Lo que lo diferencia de los otros agentes del grupo es esta combinación: en vez
 ```
 
 ### Componente ADP
-Mantiene una tabla `Q[s][a]` que se actualiza con media incremental después de cada movimiento. Funciona como la "memoria" del agente — aprende qué acciones fueron buenas o malas en cada estado.
+Mantiene una tabla `Q[s][a]` que se actualiza con media incremental después de cada movimiento. Funciona como la "memoria" del agente — aprende qué acciones fueron buenas o malas en cada estado visitado.
 
 ### Componente MCTS
-En cada turno lanza simulaciones dentro del tiempo límite usando **UCB1** para balancear exploración y explotación. Los rollouts usan una heurística simple: primero intenta ganar, luego bloquea al rival, y si no hay ninguna de las dos, juega hacia el centro.
+En cada turno lanza simulaciones durante `time_limit` segundos usando **UCB1** para balancear exploración y explotación. Los rollouts usan una heurística simple: primero intenta ganar, luego bloquea al rival, y si no hay ninguna de las dos opciones, juega hacia el centro del tablero.
 
 ### Integración GPI
 Cuando MCTS expande un nodo nuevo, inicializa su valor con `Q(s,a) × 0.3` si el ADP ya tiene experiencia en ese estado. Esto dirige la búsqueda hacia acciones históricamente buenas desde el primer rollout.
@@ -45,7 +52,7 @@ Cuando MCTS expande un nodo nuevo, inicializa su valor con `Q(s,a) × 0.3` si el
 ## Archivos
 
 ```
-📁 TuNombre/
+📁 JuanFelipeCepeda/
 ├── policy.py       # Código del agente
 ├── entrega.ipynb   # Análisis completo con experimentos y gráficas
 └── README.md       # Este archivo
@@ -73,6 +80,15 @@ accion = agente.act(board)
 | `UCB_C` | `1.41` | Constante de exploración UCB1 (≈ √2) |
 | `ADP_WEIGHT` | `0.3` | Peso del prior ADP al inicializar nodos MCTS |
 
+### Cómo correr el notebook de análisis
+
+1. Abre una terminal en la carpeta `tournament/`
+2. Ejecuta:
+```bash
+jupyter notebook entrega.ipynb
+```
+3. En Jupyter: **Kernel → Restart & Run All**
+
 ---
 
 ## Resultados
@@ -85,7 +101,7 @@ accion = agente.act(board)
 
 ## Dependencias
 
-Solo librerías estándar de Python:
+Solo librerías estándar de Python — no requiere instalación adicional:
 ```
 numpy
 math
