@@ -7,7 +7,7 @@
 
 ## Código final
 
-🔗 [Ver policy.py en GitHub](https://github.com/lucasrc08/Proyecto_IA/blob/JuanFelipeCepeda/tournament/groups/JuanFelipeCepeda/policy.py)
+🔗 [Ver policy.py en GitHub]([https://github.com/lucasrc08/Proyecto_IA/blob/JuanFelipeCepeda/tournament/groups/JuanFelipeCepeda/policy.py](https://github.com/lucasrc08/Proyecto_IA/blob/felipeCepeda/policy.py))
 
 ---
 
