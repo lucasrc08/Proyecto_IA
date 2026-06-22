@@ -113,3 +113,10 @@ Tiempo estimado de ejecución: **~35 minutos** con la configuración por defecto
 
 ---
 
+## Enlace al repositorio
+
+```
+https://github.com/<grupo>/<repo>/blob/<tu-nombre>/<tu-nombre>/policy.py
+```
+
+> Reemplazar `<grupo>`, `<repo>` y `<tu-nombre>` con los valores reales del grupo.
